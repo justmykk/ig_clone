@@ -1,0 +1,12 @@
+{
+  "name": "ig_clone_borderlesshr",
+  "displayName": "ig_clone_borderlesshr",
+  "expo": {
+    "name": "ig_clone_borderlesshr",
+    "slug": "ig_clone_borderlesshr",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
