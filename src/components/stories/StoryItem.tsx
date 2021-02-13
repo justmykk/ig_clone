@@ -5,7 +5,7 @@ import { STORY_GRADIENT } from '../../globals/colors';
 import { globalStyles } from '../../globals/styles';
 
 interface Props {
-  index: number;
+  index?: number;
   showText?: boolean
 }
 

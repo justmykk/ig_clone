@@ -4,3 +4,4 @@ export const LOVE_ICON_GRADIENT = ['#FC0B7B', '#FF0076'];
 export const STORY_GRADIENT = ['#FC0B7B', '#7820AD'];
 export const CARDS_BLACK = '#31323B';
 export const CARDS_GREY = '#B5B5B5';
+export const HASH_COLOR = '#515BD4';
