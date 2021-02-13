@@ -6,10 +6,11 @@ import { globalStyles } from '../../globals/styles';
 
 interface Props {
   index?: number;
-  showText?: boolean
+  showText?: boolean;
+  image?: any;
 }
 
-export const StoryItem: React.FC<Props> = ({ index, showText }) => {
+export const StoryItem: React.FC<Props> = ({ index, showText, image }) => {
   return (
     <View style={styles.container}>
       <LinearGradient
@@ -17,7 +18,7 @@ export const StoryItem: React.FC<Props> = ({ index, showText }) => {
         colors={STORY_GRADIENT}
       >
         <Image
-          source={require('../../assets/face_two.jpg')}
+          source={image || require('../../assets/face_two.jpg')}
           resizeMode="cover"
           style={globalStyles.storyImage}
         />

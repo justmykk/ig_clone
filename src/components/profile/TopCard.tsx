@@ -11,7 +11,7 @@ export const TopCard = () => {
     <View style={styles.card}>
       <View style={styles.topRow}>
         <Ionicons name="add-circle-outline" size={30} />
-        <StoryItem />
+        <StoryItem image={require('../../assets/face_one.jpg')} />
         <Ionicons name="ios-chatbubble-outline" size={30} />
       </View>
 
