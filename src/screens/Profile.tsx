@@ -14,13 +14,15 @@ export default function () {
       <ScrollView>
         <TopCard />
 
-        <StoryList showName />
+        <SafeAreaView>
+          <StoryList showName />
 
-        <ProfileTabs onPress={setActive} active={active} />
+          <ProfileTabs onPress={setActive} active={active} />
 
-        <View style={{ paddingHorizontal: 20, marginTop: 30 }}>
-          {active === 'post' && <PostTab />}
-        </View>
+          <View style={{ paddingHorizontal: 20, marginTop: 30 }}>
+            {active === 'post' && <PostTab />}
+          </View>
+        </SafeAreaView>
       </ScrollView>
     </View>
   );
