@@ -4,11 +4,16 @@ import { StyleSheet, View, Platform, Text, TouchableOpacity } from 'react-native
 import { CARDS_BLACK, HASH_COLOR, STORY_GRADIENT } from '../../globals/colors';
 import { StoryItem } from '../stories/StoryItem';
 import { ProfileAnalytics } from './ProfileAnalytics';
+import { Ionicons } from '@expo/vector-icons';
 
 export const TopCard = () => {
   return (
     <View style={styles.card}>
-      <StoryItem />
+      <View style={styles.topRow}>
+        <Ionicons name="add-circle-outline" size={30} />
+        <StoryItem />
+        <Ionicons name="ios-chatbubble-outline" size={30} />
+      </View>
 
       <View style={styles.textContainer}>
         <Text style={styles.name}>App Lopez</Text>
@@ -35,6 +40,11 @@ export const TopCard = () => {
 };
 
 const styles = StyleSheet.create({
+  topRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 50
+  },
   card: {
     width: '100%',
     height: 400,
